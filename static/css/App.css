@@ -41,7 +41,8 @@
   background-color: #f06496;
   height: 80px;
   color: white;
-  font-family: 'jian'
+  font-family: 'jian';
+  margin-bottom: 1rem;
 }
 
 .app-footer {
