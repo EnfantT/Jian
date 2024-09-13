@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     
     <meta charset="UTF-8">    
-    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,target-densitydpi=medium-dpi">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,target-densitydpi=medium-dpi">    
     <meta name="theme-color" content="#222">    
     <title>지안이의 돌잔치</title>
     <meta name="description" content="지안이의 돌잔치에 당신을 초대합니다." />
@@ -79,78 +80,49 @@
                 <br>
                 
             </div>
+
             <div class="mb-5 row">
                 <div class="col">
-                    <div class="image-gallery " aria-live="polite">
-                        <div class="image-gallery-content">
-                            <div class="image-gallery-slide-wrapper bottom ">
-                                <button type="button" class="image-gallery-fullscreen-button" aria-label="Open Fullscreen"></button>
-                                <button type="button" class="image-gallery-play-button" aria-label="Play or Pause Slideshow"></button>
-                                <span>
-                                    <button type="button" class="image-gallery-left-nav" aria-label="Previous Slide"></button>
-                                    <button type="button" class="image-gallery-right-nav" aria-label="Next Slide"></button>
-                                </span>
-                                <div class="image-gallery-swipe">
-                                    <div class="image-gallery-slides">
-                                        <div class="image-gallery-slide center" style="transform: translate3d(0%, 0px, 0px);">
-                                            <div class="image-gallery-image">
-                                                <img src="src/Image/gallery/1.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="image-gallery-slide right" style="transform: translate3d(100%, 0px, 0px);">
-                                            <div class="image-gallery-image">
-                                                <img src="src/Image/gallery/2.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="image-gallery-slide" style="transform: translate3d(200%, 0px, 0px);">
-                                            <div class="image-gallery-image">
-                                                <img src="src/Image/gallery/3.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="image-gallery-slide" style="transform: translate3d(300%, 0px, 0px);">
-                                            <div class="image-gallery-image">
-                                                <img src="src/Image/gallery/4.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="image-gallery-slide left" style="transform: translate3d(-100%, 0px, 0px);">
-                                            <div class="image-gallery-image">
-                                                <img src="src/Image/gallery/5.jpg">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="container">
+                        <div class="mySlides">    
+                            <img src="src/Image/gallery/1.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">    
+                            <img src="src/Image/gallery/2.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">    
+                            <img src="src/Image/gallery/3.jpg" style="width:100%">
+                        </div>
+                          
+                        <div class="mySlides">    
+                            <img src="src/Image/gallery/4.jpg" style="width:100%">
+                        </div>
+                      
+                        <div class="mySlides">    
+                            <img src="src/Image/gallery/5.jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        <div class="row">
+                            <div class="thumbnail">
+                                <img class="demo cursor" src="src/Image/gallery/1.jpg" style="width:100%" onclick="currentSlide(1)">
                             </div>
-                            <div class="image-gallery-thumbnails-wrapper bottom ">
-                                <div class="image-gallery-thumbnails">
-                                    <div class="image-gallery-thumbnails-container" aria-label="Thumbnail Navigation" style="transform: translate3d(0px, 0px, 0px);">
-                                        <a role="button" aria-pressed="true" aria-label="Go to Slide 1" class="image-gallery-thumbnail active">
-                                            <div class="image-gallery-thumbnail-inner">
-                                                <img src="src/Image/gallery/1.jpg">
-                                            </div>
-                                        </a>
-                                        <a role="button" aria-pressed="false" aria-label="Go to Slide 2" class="image-gallery-thumbnail">
-                                            <div class="image-gallery-thumbnail-inner">
-                                                <img src="src/Image/gallery/2.jpg">
-                                            </div>
-                                        </a>
-                                        <a role="button" aria-pressed="false" aria-label="Go to Slide 3" class="image-gallery-thumbnail">
-                                            <div class="image-gallery-thumbnail-inner">
-                                                <img src="src/Image/gallery/3.jpg">
-                                            </div>
-                                        </a>
-                                        <a role="button" aria-pressed="false" aria-label="Go to Slide 4" class="image-gallery-thumbnail">
-                                            <div class="image-gallery-thumbnail-inner">
-                                                <img src="src/Image/gallery/4.jpg">
-                                            </div>
-                                        </a>
-                                        <a role="button" aria-pressed="false" aria-label="Go to Slide 5" class="image-gallery-thumbnail">
-                                            <div class="image-gallery-thumbnail-inner">
-                                                <img src="src/Image/gallery/5.jpg">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="thumbnail">
+                                <img class="demo cursor" src="src/Image/gallery/2.jpg" style="width:100%" onclick="currentSlide(2)">
                             </div>
+                            <div class="thumbnail">
+                                <img class="demo cursor" src="src/Image/gallery/3.jpg" style="width:100%" onclick="currentSlide(3)">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="demo cursor" src="src/Image/gallery/4.jpg" style="width:100%" onclick="currentSlide(4)">
+                            </div>
+                            <div class="thumbnail">
+                                <img class="demo cursor" src="src/Image/gallery/5.jpg" style="width:100%" onclick="currentSlide(5)">
+                            </div>        
                         </div>
                     </div>
                 </div>
@@ -189,6 +161,37 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
 </body>
 </html>
 
