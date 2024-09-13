@@ -2,7 +2,10 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
-
+@font-face {
+  font-family: 'jian';
+  src: url('jian.ttf') format('truetype'); 
+}
 
 .nav-button {
   font-family: 'Noto Sans KR', sans-serif;
@@ -26,17 +29,19 @@
 
 .app {
   text-align: center;
-  font-family: 'Nanum Myeongjo';
+  font-family: 'jian';
   /*font-family: 'Noto Sans KR', sans-serif;*/
   word-wrap: break-word;
   word-break: keep-all;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .app-header {
-  background-color: #ffeb3b;
+  background-color: #f06496;
   height: 80px;
   color: white;
-  font-family: 'Lobster'
+  font-family: 'jian'
 }
 
 .app-footer {
