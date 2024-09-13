@@ -111,11 +111,11 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.row {
- margin: 1rem;
- vertical-align: middle;
+.thumbnail-row {
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
 }
-
 /* Six columns side by side */
 .thumbnail {
   margin-left: auto;

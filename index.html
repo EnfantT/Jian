@@ -107,7 +107,7 @@
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
 
-                        <div class="row">
+                        <div class="thumbnail-row">
                             <div class="thumbnail">
                                 <img class="demo cursor" src="src/Image/gallery/1.jpg" style="width:100%" onclick="currentSlide(1)">
                             </div>
@@ -154,7 +154,7 @@
                     </div>
                     <div class="col">
                         <a href="https://naver.me/5RR9eVDw" title="지도로 연결됩니다." target="_blank">
-                            <img src="src/map.png" style="max-width:400px;height:auto;" />
+                            <img class="img-fluid" src="src/map.png" />
                         </a>
                     </div>
                 </div>                
@@ -178,7 +178,6 @@
             let i;
             let slides = document.getElementsByClassName("mySlides");
             let dots = document.getElementsByClassName("demo");
-            let captionText = document.getElementById("caption");
             if (n > slides.length) {slideIndex = 1}
             if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {
@@ -188,8 +187,7 @@
             dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            captionText.innerHTML = dots[slideIndex-1].alt;
+            dots[slideIndex-1].className += " active";            
         }
     </script>
 </body>
